@@ -63,6 +63,24 @@ const projectsData = [
       "/images/projects/TodoProfile.png", // Profile settings screen
     ],
   },
+  {
+    id: 5,
+    title: "Servease 🚀",
+    description: "A comprehensive service management platform built using React.js, Node.js, and Firebase. Features include user authentication (login/signup), service request management (create, update, delete requests), real-time notifications, and admin dashboards. Integrated with Stripe for payments and Firebase for real-time updates.",
+    image: "/images/projects/ser.png", // Path to the project's main image
+    tag: ["All", "Web"], // Tags for filtering
+    gitUrl: "https://github.com/Milan-p23/ServeEase", // GitHub repository link
+    previewUrl: [
+      "/images/projects/login.png", // Login page
+      "/images/projects/usignup.png", // Signup page
+      "/images/projects/psignup.png",
+      "/images/projects/category.png", // User dashboard
+      "/images/projects/booking.png", // Service request form
+      "/images/projects/bookingrequest.png", // Admin panel
+      "/images/projects/mbooking.png",
+      
+    ],
+  }
 ];
 
 const ProjectsSection = () => {

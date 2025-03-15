@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const HeroSection = () => {
-  const cvDownloadLink = "https://drive.google.com/uc?export=download&id=1MS4zZ1vNTCnYkmMAlLw4jE2NpRVs0oZ3";
+  const cvViewLink = "https://drive.google.com/file/d/1MS4zZ1vNTCnYkmMAlLw4jE2NpRVs0oZ3/view";
+  const coverViewLink = "https://drive.google.com/file/d/1G3QsX0i6FqFrOjrF6765Zgv4UFMAjKo8/view"; // Replace with actual file ID
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -48,11 +49,19 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href={cvDownloadLink}
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3"
+              href={cvViewLink}
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3 mr-4"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
+              </span>
+            </Link>
+            <Link
+              href={coverViewLink}
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Download Cover Letter
               </span>
             </Link>
           </div>
